@@ -5,3 +5,4 @@ sed -e 's/^/[client] /' &
 cd ./api && npm run dev |
 sed -e 's/^/[api] /' &&
 kill $!
+#project

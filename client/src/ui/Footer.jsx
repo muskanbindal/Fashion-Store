@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer className="grid grid-cols-1 md:(grid-cols-3) border-t border-gray-300 bg-gray-200 px-4">
 			<div className="m-4 sm:m-6 flex-1">
-				<h2 className="text-4xl text-center md:text-left mb-4">BRAND</h2>
+				<h2 className="text-4xl text-center md:text-left mb-4">Mytalorzone By Sahiba</h2>
 				<p className="text-justify text-gray-700">Eiusmod duis reprehenderit quis cillum nisi anim consectetur occaecat cupidatat anim incididunt aliqua eiusmod ad consectetur in ut cupidatat proident dolore aute irure enim in in ut adipisicing in do est.</p>
 				<ul className="flex mt-6 justify-center md:justify-start space-x-4">
 					<li>

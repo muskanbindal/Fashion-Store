@@ -12,10 +12,10 @@ export default function RegisterPage() {
 	const navigate = useNavigate()
 	
 	const handleRegister = async userData => {
-		const resp = await api.registerUser(userData)
-		if (resp.status == "ok") {
-			const loginResp = await api.loginUser(userData)
-			if (loginResp.status == "ok") {
+		const resp = await api.registerUser({fullname:"muskan bindal",email:"email@gmail.com",password:"abcdeobfew",isAdmin:false});
+		if (resp) {
+			const loginResp = await api.loginUser({fullname:"muskan bindal",email:"email@gmail.com",password:"abcdeobfew",isAdmin:false})
+			if (loginResp) {
 				setUser(api.getUser())
 				await api.createUserCart(cart.products.map(p => ({
 					productID: p.id, 
